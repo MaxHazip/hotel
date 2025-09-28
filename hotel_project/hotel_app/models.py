@@ -71,7 +71,7 @@ class RoomStatuses(models.Model):
         return f"{self.name_of_status}"
 
 class RoomClasses(models.Model):
-    name_of_class = models.CharField('Класс комнаты', max_length=20, unique=True)
+    name_of_class = models.CharField('Класс комнаты', max_length=40, unique=True)
     number_of_beds = models.IntegerField('Количество мест')
     cost = models.DecimalField('Стоимость', max_digits=30, decimal_places=2)
 
@@ -210,8 +210,8 @@ class RoomService(models.Model):
     amount = models.IntegerField('Количество')
 
     class Meta:
-        verbose_name = 'Услуга в номер'
-        verbose_name_plural = 'Услуги в номер'
+        verbose_name = 'Блюдо в номер'
+        verbose_name_plural = 'Блюда в номер'
 
     def __str__(self):
         return f"{self.id}"
