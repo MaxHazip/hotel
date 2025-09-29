@@ -85,9 +85,12 @@ class HotelRooms(models.Model):
 
 
 class Clients(models.Model):
-    full_name = models.CharField('ФИО', max_length=25)
+    first_name = models.CharField('Имя', max_length=25, default='Null')
+    last_name = models.CharField('Фамилия', max_length=25, default='Null')
+    middle_name = models.CharField('Отчество', max_length=25, default='Null')
     birth_date = models.DateField('Дата рождения')
-    contacts = models.CharField('Контактные данные', max_length=100, unique=True)
+    phone_number = models.CharField('Номер телефона', max_length=40, unique=True, default='Null')
+    email = models.CharField('Эдектронная почта', max_length=40, unique=True, default='Null')
     passport_number = models.CharField('Номер паспорта', max_length=30, unique=True)
     hotel_room_id = models.ForeignKey(HotelRooms, verbose_name='id Комнат', on_delete=models.CASCADE)
 
@@ -96,7 +99,7 @@ class Clients(models.Model):
         verbose_name_plural = 'Клиенты'
 
     def __str__(self):
-        return f"{self.full_name}"
+        return f"{self.first_name} {self.last_name}"
 
 class ClientsAtTheEvent(models.Model):
     event_id = models.ForeignKey(Events, verbose_name='id Событий', on_delete=models.CASCADE)
@@ -132,11 +135,14 @@ class Posts(models.Model):
         return f"{self.name}"
 
 class Employee(models.Model):
-    full_name = models.CharField('ФИО', max_length=40)
+    first_name = models.CharField('Имя', max_length=25, default='Null')
+    last_name = models.CharField('Фамилия', max_length=25, default='Null')
+    middle_name = models.CharField('Отчество', max_length=25, default='Null')
     post_id = models.ForeignKey(Posts, verbose_name='id Должностей', on_delete=models.CASCADE)
     birth_date = models.DateField('Дата рождения')
     passport = models.CharField('Паспротные данные', max_length=40, unique=True)
-    contacts = models.CharField('Контактные данные', max_length=40, unique=True)
+    phone_number = models.CharField('Номер телефона', max_length=40, unique=True, default='Null')
+    email = models.CharField('Эдектронная почта', max_length=40, unique=True, default='Null')
     hiring_date = models.DateField('Дата приема на работу')
 
     class Meta:
@@ -144,7 +150,7 @@ class Employee(models.Model):
         verbose_name_plural = 'Работники'
 
     def __str__(self):
-        return f"{self.full_name}"
+        return f"{self.first_name} {self.last_name}"
 
 class ServiceTypes(models.Model):
     name = models.CharField('Тип услуги', max_length=30, unique=True)
