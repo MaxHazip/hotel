@@ -50,16 +50,6 @@ class Events(models.Model):
     def __str__(self):
         return f"{self.name}"
 
-class Sex(models.Model):
-    name = models.CharField('Пол', max_length=30, unique=True)
-
-    class Meta:
-        verbose_name = 'Пол'
-        verbose_name_plural = 'Пол'
-
-    def __str__(self):
-        return f"{self.name}"
-
 class RoomStatuses(models.Model):
     name_of_status = models.CharField('Статус комнаты', max_length=30, unique=True)
 
@@ -100,7 +90,6 @@ class Clients(models.Model):
     contacts = models.CharField('Контактные данные', max_length=100, unique=True)
     passport_number = models.CharField('Номер паспорта', max_length=30, unique=True)
     hotel_room_id = models.ForeignKey(HotelRooms, verbose_name='id Комнат', on_delete=models.CASCADE)
-    sex_id = models.ForeignKey(Sex, verbose_name='Пол', on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = 'Клиент'
@@ -144,7 +133,6 @@ class Posts(models.Model):
 
 class Employee(models.Model):
     full_name = models.CharField('ФИО', max_length=40)
-    sex_id = models.ForeignKey(Sex, verbose_name='Пол', on_delete=models.CASCADE)
     post_id = models.ForeignKey(Posts, verbose_name='id Должностей', on_delete=models.CASCADE)
     birth_date = models.DateField('Дата рождения')
     passport = models.CharField('Паспротные данные', max_length=40, unique=True)
