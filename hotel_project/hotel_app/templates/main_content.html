@@ -1,0 +1,14 @@
+{% extends "header_footer.html" %}
+
+{% block main %}
+<img src="../static/media/main-image.png" alt="Отель" class="main-image">
+<div class="container">
+    <div class="reservation">
+        <p>Room reservation</p>
+        <input type="date" name="" id="check-in_date" min="{{ today }}">
+        <input type="date" name="" id="">
+        <input type="text" name="" id="">
+        <button type="submit">Найти номер</button>
+    </div>
+</div>
+{% endblock %}

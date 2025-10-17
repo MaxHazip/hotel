@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header">
+            <div class="container">
+                <nav class="main-nav">
+                    <ul class="main-nav_list">
+                        <li class="main-nav_list-item">
+                            <a href="services/">Services</a>
+                        </li>
+                        <li class="main-nav_list-item">
+                            <a href="events/">Events</a>
+                        </li>
+                        <li class="main-nav_list-item">
+                            <a href="rooms/">Rooms</a>
+                        </li>
+                        <li class="main-nav_list-item">
+                            <a href="main_page/">
+                                <img src="../static/media/Logo.svg" alt="Логотип">
+                            </a>
+                        </li>
+                        <li class="main-nav_list-item">
+                            <a href="about/">About hotel</a>
+                        </li>
+                        <li class="main-nav_list-item">
+                            <a href="contacts/">Contacts</a>
+                        </li>
+                        <li class="main-nav_list-item">
+                            <a href="dishes/">Dishes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+        {% block main %}
+        {% endblock %}
+        </main>
+        <footer class="main-footer">
+
+        </footer>
+    </div>
+</body>
+</html>
