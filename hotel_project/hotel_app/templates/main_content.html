@@ -5,12 +5,24 @@
 <div class="container">
     <div class="reservation">
         <p>Room reservation</p>
-        
-        <div class="check-in_label">Check-in</div>
-        <input type="date" min="{{ today }}" value="{{ today }}"  id="check-in_date" class="date-input">
-        <input type="date" min="{{ tomorrow }}" value="{{ tomorrow }}" name="" id="check-out_date" class="date-input">
-        <input type="text" name="" id="">
-        <button type="submit">Найти номер</button>
+        <div class="date-input">
+            <div class="check-in_label">Check-in</div>
+            <input type="date" min="{{ today }}" value="{{ today }}"  id="check-in_date">
+        </div>
+        <div class="date-input">
+            <div class="check-in_label">Check-in</div>
+            <input type="date" min="{{ tomorrow }}" value="{{ tomorrow }}" name="" id="check-out_date">
+        </div>
+        <input type="text" name="" id="promo" placeholder="Promo">
+        <select name="" id="guests">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <button type="submit">Find room</button>
     </div>
 </div>
 {% endblock %}

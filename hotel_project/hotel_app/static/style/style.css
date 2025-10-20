@@ -4,10 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap');
 
-:root {
-    --tom: {{ tomorrow }};
-}
-
 header{
     font-family: "Konkhmer Sleokchher", system-ui;
     margin-bottom: 25px;
@@ -15,6 +11,10 @@ header{
 
 body {
     padding: 25px 0px;
+}
+
+.reservation {
+    font-family: "Alike Angular", serif;
 }
 
 .wrapper{
@@ -56,17 +56,27 @@ body {
 }
 
 .reservation p:first-child{
-    font-family: "Alike Angular", serif;
     font-size: 20px;
 }
 
-.check-in_label {
-    position: absolute;
-    left: 622px;
-    bottom: -96px;
+.date-input {
+    padding: 5px 0px 4px 8px;
+    border: 2px solid #DCCEB4;
 }
 
-.date-input {
-    padding: 19px 0px 4px 8px;
-    border: 2px solid #A9A1A1;
+.check-in_label {
+    margin-bottom: 3px;
 }
+
+#promo {
+    border: 2px solid #DCCEB4;
+    padding: 13px 0px 13px 9px;
+    font-family: "Alike Angular", serif;
+}
+
+#promo::placeholder {
+    color: black;
+    position: relative;
+    top: -13px;
+}
+
