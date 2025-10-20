@@ -5,8 +5,10 @@
 <div class="container">
     <div class="reservation">
         <p>Room reservation</p>
-        <input type="date" name="" id="check-in_date" min="{{ today }}">
-        <input type="date" name="" id="">
+        
+        <div class="check-in_label">Check-in</div>
+        <input type="date" min="{{ today }}" value="{{ today }}"  id="check-in_date" class="date-input">
+        <input type="date" min="{{ tomorrow }}" value="{{ tomorrow }}" name="" id="check-out_date" class="date-input">
         <input type="text" name="" id="">
         <button type="submit">Найти номер</button>
     </div>

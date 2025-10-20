@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap');
 
+:root {
+    --tom: {{ tomorrow }};
+}
+
 header{
     font-family: "Konkhmer Sleokchher", system-ui;
     margin-bottom: 25px;
@@ -46,7 +50,8 @@ body {
 .reservation{
     min-width: 750px;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between; 
+    align-items: center;   
     padding: 35px 0px;
 }
 
@@ -55,6 +60,13 @@ body {
     font-size: 20px;
 }
 
-#check-in_date {
-    
+.check-in_label {
+    position: absolute;
+    left: 622px;
+    bottom: -96px;
+}
+
+.date-input {
+    padding: 19px 0px 4px 8px;
+    border: 2px solid #A9A1A1;
 }
