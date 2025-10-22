@@ -2,27 +2,65 @@
 
 {% block main %}
 <img src="../static/media/main-image.png" alt="Отель" class="main-image">
-<div class="container">
-    <div class="reservation">
-        <p>Room reservation</p>
-        <div class="date-input">
-            <div class="check-in_label">Check-in</div>
-            <input type="date" min="{{ today }}" value="{{ today }}"  id="check-in_date">
-        </div>
-        <div class="date-input">
-            <div class="check-in_label">Check-in</div>
-            <input type="date" min="{{ tomorrow }}" value="{{ tomorrow }}" name="" id="check-out_date">
-        </div>
-        <input type="text" name="" id="promo" placeholder="Promo">
-        <select name="" id="guests">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-        </select>
-        <button type="submit">Find room</button>
+<section class="room-reserve">
+    <div class="container">
+        <form>
+            <fieldset class="reservation">
+                <p>Room reservation</p>
+                <div class="date-input">
+                    <div class="check-in_label">Check-in</div>
+                    <input type="date" min="{{ today }}" value="{{ today }}"  id="check-in_date">
+                </div>
+                <div class="date-input">
+                    <div class="check-in_label">Check-in</div>
+                    <input type="date" min="{{ tomorrow }}" value="{{ tomorrow }}" name="" id="check-out_date">
+                </div>
+                <div class="promo_container">
+                    <p class="promo_label">Promo</p>
+                    <input type="text" name="">
+                </div>
+                <div class="guests-number_container">
+                    <select name="" id="guests">
+                        <option value="1" selected disabled>Guests number</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <button type="submit" class="find-button">Find room</button>
+            </fieldset>
+        </form>
     </div>
-</div>
+</section>
+<section class="services-a-events">
+    <div class="container">
+        <div class="services-a-events_wrapper">
+            <h2>Services and Events</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="../static/media/pammukake.png" alt="">
+                    <h3>Book a tour of Pamukkale</h3>
+                    <p>White travertine terraces with clear turquoise water.</p>
+                    <a href="#">
+                        <img src="../static/media/yellow-line.svg" alt="">
+                        More
+                    </a>
+                </div>
+                <div class="card">
+                    <img src="../static/media/Massage.png" alt="">
+                    <h3>Therapeutic massages</h3>
+                    <p>Let your body relax</p>
+
+                    <a href="#">
+                        <img src="../static/media/yellow-line.svg" alt="">
+                        More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

@@ -55,7 +55,7 @@ body {
     padding: 35px 0px;
 }
 
-.reservation p:first-child{
+.reservation > p:first-child{
     font-size: 20px;
 }
 
@@ -68,15 +68,83 @@ body {
     margin-bottom: 3px;
 }
 
-#promo {
+.promo_container {
+    padding: 2px 0px 10px 9px;
+    font-size: 14px;
     border: 2px solid #DCCEB4;
-    padding: 13px 0px 13px 9px;
+}
+
+#guests {
+    background-image: url("../media/Forward.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 15px;
+    cursor: pointer;
+    font-family: "Alike Angular", serif;
+    font-size: 14px;
+    -webkit-appearance: none;
+}
+
+#guests:focus option:first-child {
+    display: none;
+}
+
+.guests-number_container {
+    padding: 13px 10px;
+    border: 2px solid #DCCEB4;
+}
+
+.find-button {
+    background-color: white;
+    border: 2px solid #DCCEB4;
+    padding: 13px 36px;
+}
+
+.services-a-events {
+    background-color: #F8F3EA;
+    padding: 36px 0px;
+}
+
+.services-a-events_wrapper {
+    padding: 0px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 517px;
     font-family: "Alike Angular", serif;
 }
 
-#promo::placeholder {
-    color: black;
-    position: relative;
-    top: -13px;
+.services-a-events_wrapper h2 {
+    font-size: 36px;
 }
 
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 433px;
+    
+}
+
+.card h3 {
+    font-size: 24px;
+}
+.card p {
+    color: #707070;
+    font-size: 20px;
+}
+
+.card a {
+    color: #DFC941;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 60px;
+}
