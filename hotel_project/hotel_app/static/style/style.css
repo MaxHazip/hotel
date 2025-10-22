@@ -25,7 +25,6 @@ body {
 
 .main-footer{
     margin-top: auto;
-    height: 30px;
     width: 100%;
 }
 
@@ -148,3 +147,8 @@ body {
     justify-content: space-between;
     max-width: 60px;
 }
+
+.rooms {
+    padding: 27px 0px;
+}
+
