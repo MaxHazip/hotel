@@ -148,9 +148,12 @@ body {
     max-width: 60px;
 }
 
-.rooms {
+.rooms_section {
     padding: 27px 0px;
     font-family: "Alike Angular", serif;
+}
+
+.rooms {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -159,7 +162,7 @@ body {
 .room {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .room > img {
@@ -169,11 +172,14 @@ body {
 .room_desc {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 32px;
     background-color: #F8F3EA;
     max-width: 500px;
     flex-grow: 1;
+}
+
+.room_desc > p:first-child{
+    margin-bottom: 30px;
 }
 
 .description {
@@ -189,7 +195,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 48px;
 }
+
+.rooms_container > h2:first-child {
+    margin-bottom: 30px;
+} 
 
 .rooms_container h2 {
     font-size: 36px;
@@ -201,6 +212,7 @@ body {
     max-width: 436px;
     justify-content: space-between;
     gap: 20px 0px;
+    margin-bottom: 30px;
 }
 
 .tag {
@@ -212,3 +224,4 @@ body {
 .description {
     font-size: 28px;
 }
+
