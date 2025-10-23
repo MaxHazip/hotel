@@ -9,7 +9,7 @@
                 <p>Room reservation</p>
                 <div class="date-input">
                     <div class="check-in_label">Check-in</div>
-                    <input type="date" min="{{ today }}" value="{{ today }}"  id="check-in_date">
+                    <input type="date" min="{{ today }}" value="{{ today }}" id="check-in_date">
                 </div>
                 <div class="date-input">
                     <div class="check-in_label">Check-out</div>
@@ -64,17 +64,35 @@
     </div>
 </section>
 <section class="rooms">
-    <div class="container">
+    <div class="container rooms_container">
         <h2>Rooms</h2>
-
         <div class="rooms">
             <div class="room">
-                <img src="" alt="">
-                <div>
-                    <div class="room_desc">
-                        <p></p>
-                        
-                    </div>
+                <img src="../static/media/standart.png" alt="">
+                <div class="room_desc">
+                    <p class="rooms_name">Standard room with double bed</p>
+                    <ul class="tags">
+                        <li class="tag">25 m<sup>2</sup></li>
+                        <li class="tag">Double bed</li>
+                        <li class="tag">Rooms: 1</li>
+                        <li class="tag">2 Guests</li>
+                    </ul>
+                    <p class="description">This designer room features a double bed, sofa, comfortable work area, and
+                        panoramic views. A tea station, toiletries, robe, and slippers are provided for your comfort.
+                    </p>
+                </div>
+            </div>
+            <div class="room">
+                <img src="../static/media/lux.png" alt="">
+                <div class="room_desc">
+                    <p class="rooms_name">Lux room with double bed</p>
+                    <ul class="tags">
+                        <li class="tag">50 m<sup>2</sup></li>
+                        <li class="tag">Double bed</li>
+                        <li class="tag">Rooms: 2</li>
+                        <li class="tag">4 Guests</li>
+                    </ul>
+                    <p class="description">This spacious designer room features a double bed, sofa, comfortable workspace, guest toilet, dining area, and a balcony with panoramic views of the river bay. For your comfort, a coffee machine, extensive toiletries, robe, and slippers are provided.</p>
                 </div>
             </div>
         </div>

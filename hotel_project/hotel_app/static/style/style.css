@@ -150,5 +150,65 @@ body {
 
 .rooms {
     padding: 27px 0px;
+    font-family: "Alike Angular", serif;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
+.room {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.room > img {
+    margin-bottom: 40px;
+}
+
+.room_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    background-color: #F8F3EA;
+    max-width: 500px;
+    flex-grow: 1;
+}
+
+.description {
+    text-align: center;
+}
+
+.room_desc > p:first-child {
+    font-size: 28px;
+}
+
+.rooms_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rooms_container h2 {
+    font-size: 36px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 436px;
+    justify-content: space-between;
+    gap: 20px 0px;
+}
+
+.tag {
+    font-size: 24px;
+    padding: 9px 20px;
+    background-color: #DCCEB4;
+}
+
+.description {
+    font-size: 28px;
+}
