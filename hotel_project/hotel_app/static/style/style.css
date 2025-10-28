@@ -153,12 +153,6 @@ body {
     font-family: "Alike Angular", serif;
 }
 
-.rooms {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
 .room {
     display: flex;
     flex-direction: column;
@@ -167,6 +161,7 @@ body {
 
 .room > img {
     margin-bottom: 40px;
+    width: 95%;
 }
 
 .room_desc {
@@ -225,3 +220,37 @@ body {
     font-size: 28px;
 }
 
+.rooms {
+    display: grid;
+    width: 100%;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer {
+    background-color: #F8F3EA;
+    padding: 50px 0px;
+    font-family: "Alike Angular", serif;
+}
+
+.footer-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.name-find {
+    width: 22.77%;
+}
+
+.name {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.name-find a{
+    padding: 20px 45px;
+    font-size: 32px;
+    background-color: #DCCEB4;
+}
