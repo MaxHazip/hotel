@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style/style.css">
+    {% block main-link %}
+    {% endblock %}
+    <link rel="stylesheet" href="../static/style/header-footer-style.css">     
     <title>Document</title>
 </head>
 <body>
@@ -21,7 +23,7 @@
                         <li class="main-nav_list-item">
                             <a href="/rooms/">Rooms</a>
                         </li>
-                        <li class="main-nav_list-item">
+                        <li class="main-nav_list-item" class="head-logo">
                             <a href="/main_page/">
                                 <img src="../static/media/Logo.svg" alt="Логотип">
                             </a>

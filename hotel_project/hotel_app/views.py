@@ -14,3 +14,12 @@ def main(request):
     }
 
     return render(request, 'main_content.html', context)
+
+def services(request):
+
+
+    context = {
+
+    }
+
+    return render(request, 'services.html', context)

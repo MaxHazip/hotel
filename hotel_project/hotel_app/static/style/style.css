@@ -4,43 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap');
 
-header{
-    font-family: "Konkhmer Sleokchher", system-ui;
-    margin-bottom: 25px;
-}
-
-body {
-    padding: 25px 0px;
-}
-
-.reservation {
-    font-family: "Alike Angular", serif;
-}
-
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.main-footer{
-    margin-top: auto;
-    width: 100%;
-}
-
-.container{
-    width: 1146px;
-    margin: 0 auto;
-}
-
-
-.main-nav_list {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .main-image {
     width: 100%;
     min-height: 810px;
@@ -52,6 +15,7 @@ body {
     justify-content: space-between; 
     align-items: center;   
     padding: 35px 0px;
+    font-family: "Alike Angular", serif;
 }
 
 .reservation > p:first-child{
@@ -225,56 +189,4 @@ body {
     width: 100%;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
-}
-
-footer {
-    background-color: #F8F3EA;
-    padding: 50px 0px;
-    font-family: "Alike Angular", serif;
-}
-
-.footer-wrapper {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: start;
-}
-
-.name-find {
-    width: 22.77%;
-}
-
-.name {
-    font-size: 32px;
-    margin-bottom: 25px;
-}
-
-.find-button-footer {
-    padding: 25px 45px;
-    display: block;
-    font-size: 32px;
-    text-align: center;
-    background-color: #DCCEB4;
-}
-
-.contacts {
-    font-size: 28px;
-    display: flex;
-    flex-direction: column;
-}
-
-.contacts a:first-child {
-    margin-bottom: 25px;
-}
-
-.footer-nav_list {
-    font-size: 20px;
-}
-
-.footer-nav_list li {
-    margin-bottom: 25px;
-}
-
-.footer-nav_list li:last-child {
-    margin-bottom: 0px;
 }
