@@ -6,10 +6,60 @@
 
 main {
     font-family: "Alike Angular", serif;
+    padding: 50px;
 }
 
 .services-title {
     text-align: center;
     margin-bottom: 50px;
     font-size: 36px;
+}
+
+.services-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;     
+    grid-template-rows: auto 1fr auto;
+    row-gap: 50px;
+}
+
+.services-card {
+    width: 87.75%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content subgrid;
+    grid-row: span 4;
+}
+
+.services-card > img {
+    margin-bottom: 15px;
+}
+
+.services-card > h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.services-card > p {
+    font-size: 20px;
+    color: #707070;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+.services-card > a {
+    color: #DFC941;
+}
+
+.services-card > a::before {
+    content: "-";
+    color: #DFC941;
+    font-size: 20px;
+    position: relative;
+    top: 10%;
+}
+
+.services-card > a:visited {
+    color: #DFC941;
 }

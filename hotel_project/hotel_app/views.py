@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from datetime import date, timedelta
+from .models import *
 
 # Create your views here.
 def main(request):
@@ -17,9 +18,10 @@ def main(request):
 
 def services(request):
 
+    services = Services.objects.all()
 
     context = {
-
+        'services': services
     }
 
     return render(request, 'services.html', context)

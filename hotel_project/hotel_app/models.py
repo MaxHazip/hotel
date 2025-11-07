@@ -42,6 +42,7 @@ class Events(models.Model):
     event_type_id = models.ForeignKey(EventTypes, verbose_name='id Типа события', on_delete=models.CASCADE)
     event_status_id = models.ForeignKey(EventStatuses, verbose_name='id Статуса события', on_delete=models.CASCADE)
     cost = models.DecimalField('Общая цена', max_digits=20, decimal_places=2)
+    image = models.ImageField(upload_to='media/', default="static/media/Logo.svg")
 
     class Meta:
         verbose_name = 'Событие'
@@ -64,6 +65,7 @@ class RoomClasses(models.Model):
     name_of_class = models.CharField('Класс комнаты', max_length=40, unique=True)
     number_of_beds = models.IntegerField('Количество мест')
     cost = models.DecimalField('Стоимость', max_digits=30, decimal_places=2)
+    image = models.ImageField(upload_to='media/', default="static/media/Logo.svg")   
 
     class Meta:
         verbose_name = 'Класс номера'
@@ -115,6 +117,7 @@ class ClientsAtTheEvent(models.Model):
 class Dishes(models.Model):
     name = models.CharField('Название блюда', max_length=30, unique=True)
     cost = models.DecimalField('Цена', max_digits=10, decimal_places=2)
+    image = models.ImageField(upload_to='media/', default="static/media/Logo.svg")
 
     class Meta:
         verbose_name = 'Блюдо'
@@ -166,6 +169,8 @@ class Services(models.Model):
     name = models.CharField('Название услуги', max_length=30, unique=True, default='Null')
     service_type_id = models.ForeignKey(ServiceTypes, verbose_name='id Типа услуги', on_delete=models.CASCADE)
     cost = models.DecimalField('Стоимость услуги', max_digits=30, decimal_places=2)
+    description = models.TextField('Описание услуги', default="")
+    image = models.ImageField(upload_to='media/', default="static/media/Logo.svg")
 
     class Meta:
         verbose_name = 'Услуга'

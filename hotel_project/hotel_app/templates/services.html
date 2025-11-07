@@ -7,5 +7,15 @@
 {% block main %}
 <div class="container">
     <h1 class="services-title">Services</h1>
+    <div class="services-grid">
+        {% for service in services %}
+        <div class="services-card">
+            <img src="../static/{{ service.image }}" alt="">
+            <h2>{{ service.name }}</h2>
+            <p>{{service.description}}</p>
+            <a href="#">More</a>
+        </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
