@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from datetime import date, timedelta
 from .models import *
 
@@ -25,3 +25,14 @@ def services(request):
     }
 
     return render(request, 'services.html', context)
+
+def sevPage(request, service_id: int):
+
+    service = get_object_or_404(Services, id=service_id)
+
+
+    context = {
+        'service': service,
+    }
+
+    return render(request, 'service-page.html', context)

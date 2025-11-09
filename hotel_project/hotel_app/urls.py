@@ -4,4 +4,5 @@ from hotel_app import views
 urlpatterns = [
     path('main_page/', views.main),
     path('services/', views.services),
+    path('service_page/<int:service_id>', views.sevPage),
 ]

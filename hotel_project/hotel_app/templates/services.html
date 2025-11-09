@@ -1,19 +1,22 @@
 {% extends "header_footer.html" %}
 
+
+
 {% block main-link %}
 <link rel="stylesheet" href="../static/style/services-style.css">
 {% endblock %}
 
 {% block main %}
+{% load static %}
 <div class="container">
     <h1 class="services-title">Services</h1>
     <div class="services-grid">
         {% for service in services %}
         <div class="services-card">
-            <img src="../static/{{ service.image }}" alt="">
+            <img src="../static{{ service.image.url }}" alt="">
             <h2>{{ service.name }}</h2>
             <p>{{service.description}}</p>
-            <a href="#">More</a>
+            <a href="/service_page/{{ service.id }}">More</a>
         </div>
         {% endfor %}
     </div>
