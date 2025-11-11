@@ -36,3 +36,11 @@ def sevPage(request, service_id: int):
     }
 
     return render(request, 'service-page.html', context)
+
+def roomsPage(request):
+
+    context = {
+
+    }
+
+    return render(request, 'rooms.html', context)
