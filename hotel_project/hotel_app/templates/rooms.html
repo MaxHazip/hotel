@@ -1,11 +1,39 @@
 {% extends "header_footer.html" %}
 
 {% block main-link %}
-<link rel="stylesheet" href="../static/style/style.css">
+<link rel="stylesheet" href="../static/style/rooms.css">
 {% endblock %}
 
 {% block main %}
 <div class="container">
-    
+    <h1>Rooms</h1>
+    <div class="rooms_grid">
+        <div class="room-card">
+            <img src="../static/media/Lux.png" alt="">
+            <div class="main-information">
+                <h2 class="main-information-title">Lux</h2>
+                <ul class="tags-list">
+                    <li class="tags-list-item">17м<sup>2</sup></li>
+                    <li class="tags-list-item">Single bed</li>
+                    <li class="tags-list-item">Rooms: 1</li>
+                    <li class="tags-list-item">1 Guest</li>
+                </ul>
+                <p class="description">This designer room features a double bed, sofa, comfortable work area, and panoramic views. A tea station, toiletries, robe, and slippers are provided for your comfort.</p>
+            </div>
+        </div>
+        <div class="room-card">
+            <img src="../static/media/Lux.png" alt="">
+            <div class="main-information">
+                <h2>Lux</h2>
+                <ul class="tags-list">
+                    <li class="tags-list-item">17м<sup>2</sup></li>
+                    <li class="tags-list-item">Single bed</li>
+                    <li class="tags-list-item">Rooms: 1</li>
+                    <li class="tags-list-item">1 Guest</li>
+                </ul>
+                <p class="description">This designer room features a double bed, sofa, comfortable work area, and panoramic views. A tea station, toiletries, robe, and slippers are provided for your comfort.</p>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
