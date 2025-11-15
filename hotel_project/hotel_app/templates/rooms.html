@@ -11,27 +11,14 @@
         <div class="room-card">
             <img src="../static/media/Lux.png" alt="">
             <div class="main-information">
-                <h2 class="main-information-title">Lux</h2>
+                <h2 class="main-information-title">{{ rooms.name_of_class }}</h2>
                 <ul class="tags-list">
-                    <li class="tags-list-item">17м<sup>2</sup></li>
-                    <li class="tags-list-item">Single bed</li>
-                    <li class="tags-list-item">Rooms: 1</li>
-                    <li class="tags-list-item">1 Guest</li>
+                    <li class="tags-list-item first">{{ rooms.square_meters }}м<sup>2</sup></li>
+                    <li class="tags-list-item">{{ rooms.bed_types.bed_types }}</li>
+                    <li class="tags-list-item">Rooms: {{ rooms.rooms }}</li>
+                    <li class="tags-list-item">{{ rooms.guests }} Guest</li>
                 </ul>
-                <p class="description">This designer room features a double bed, sofa, comfortable work area, and panoramic views. A tea station, toiletries, robe, and slippers are provided for your comfort.</p>
-            </div>
-        </div>
-        <div class="room-card">
-            <img src="../static/media/Lux.png" alt="">
-            <div class="main-information">
-                <h2>Lux</h2>
-                <ul class="tags-list">
-                    <li class="tags-list-item">17м<sup>2</sup></li>
-                    <li class="tags-list-item">Single bed</li>
-                    <li class="tags-list-item">Rooms: 1</li>
-                    <li class="tags-list-item">1 Guest</li>
-                </ul>
-                <p class="description">This designer room features a double bed, sofa, comfortable work area, and panoramic views. A tea station, toiletries, robe, and slippers are provided for your comfort.</p>
+                <p class="description">{{ rooms.min_desc }}</p>
             </div>
         </div>
     </div>

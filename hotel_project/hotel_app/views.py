@@ -39,8 +39,10 @@ def sevPage(request, service_id: int):
 
 def roomsPage(request):
 
-    context = {
+    rooms = RoomClasses.objects.first()
 
+    context = {
+        "rooms": rooms,
     }
 
     return render(request, 'rooms.html', context)

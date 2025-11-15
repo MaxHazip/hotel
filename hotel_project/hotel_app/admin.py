@@ -19,4 +19,5 @@ admin.site.register(Services)
 admin.site.register(ProvisionOfService)
 admin.site.register(RoomBooking)
 admin.site.register(RoomService)
+admin.site.register(BedTypes)
 

@@ -60,12 +60,28 @@ class RoomStatuses(models.Model):
 
     def __str__(self):
         return f"{self.name_of_status}"
+    
+class BedTypes(models.Model):
+    bed_types = models.CharField("Типы кровати", max_length=30, default="")
+
+    class Meta:
+        verbose_name = 'Типы кроватей'
+        verbose_name_plural = 'Типы кровати'
+
+    def __str__(self):
+        return f"{self.bed_types}"
 
 class RoomClasses(models.Model):
     name_of_class = models.CharField('Класс комнаты', max_length=40, unique=True)
     number_of_beds = models.IntegerField('Количество мест')
     cost = models.DecimalField('Стоимость', max_digits=30, decimal_places=2)
     image = models.ImageField(upload_to='RoomClasses/', default="static/media/Logo.svg")   
+    square_meters = models.IntegerField('Квадратные метры', default=0)
+    bed_types = models.ForeignKey(BedTypes, on_delete=models.CASCADE, verbose_name="id Типа кровати", null=True, blank=True)
+    guests = models.IntegerField('Количество гостей', default=0)
+    rooms = models.IntegerField('Количество комнат', default=0)
+    min_desc = models.TextField('Описание карточки', default="")
+    desc = models.TextField('Описание комнаты', default="")
 
     class Meta:
         verbose_name = 'Класс номера'
