@@ -8,19 +8,21 @@
 <div class="container">
     <h1>Rooms</h1>
     <div class="rooms_grid">
+        {% for room in rooms %}
         <div class="room-card">
-            <img src="../static/media/Lux.png" alt="">
+            <img src="../static{{ room.image.url }}" alt="">
             <div class="main-information">
-                <h2 class="main-information-title">{{ rooms.name_of_class }}</h2>
+                <h2 class="main-information-title">{{ room.name_of_class }}</h2>
                 <ul class="tags-list">
-                    <li class="tags-list-item first">{{ rooms.square_meters }}м<sup>2</sup></li>
-                    <li class="tags-list-item">{{ rooms.bed_types.bed_types }}</li>
-                    <li class="tags-list-item">Rooms: {{ rooms.rooms }}</li>
-                    <li class="tags-list-item">{{ rooms.guests }} Guest</li>
+                    <li class="tags-list-item first">{{ room.square_meters }}м<sup>2</sup></li>
+                    <li class="tags-list-item">{{ room.bed_types.bed_types }}</li>
+                    <li class="tags-list-item">Rooms: {{ room.rooms }}</li>
+                    <li class="tags-list-item">{{ room.guests }} Guest</li>
                 </ul>
-                <p class="description">{{ rooms.min_desc }}</p>
+                <p class="description">{{ room.min_desc }}</p>
             </div>
         </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

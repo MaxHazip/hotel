@@ -39,7 +39,7 @@ def sevPage(request, service_id: int):
 
 def roomsPage(request):
 
-    rooms = RoomClasses.objects.first()
+    rooms = RoomClasses.objects.all()
 
     context = {
         "rooms": rooms,

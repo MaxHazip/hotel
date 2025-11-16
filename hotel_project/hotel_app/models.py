@@ -73,12 +73,12 @@ class BedTypes(models.Model):
 
 class RoomClasses(models.Model):
     name_of_class = models.CharField('Класс комнаты', max_length=40, unique=True)
-    number_of_beds = models.IntegerField('Количество мест')
+    guests = models.IntegerField('Количество гостей')
     cost = models.DecimalField('Стоимость', max_digits=30, decimal_places=2)
     image = models.ImageField(upload_to='RoomClasses/', default="static/media/Logo.svg")   
     square_meters = models.IntegerField('Квадратные метры', default=0)
     bed_types = models.ForeignKey(BedTypes, on_delete=models.CASCADE, verbose_name="id Типа кровати", null=True, blank=True)
-    guests = models.IntegerField('Количество гостей', default=0)
+    beds = models.IntegerField('Количество кроватей', default=0)
     rooms = models.IntegerField('Количество комнат', default=0)
     min_desc = models.TextField('Описание карточки', default="")
     desc = models.TextField('Описание комнаты', default="")
