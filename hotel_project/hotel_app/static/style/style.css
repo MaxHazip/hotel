@@ -93,7 +93,6 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 433px;
-    
 }
 
 .card h3 {
@@ -125,7 +124,7 @@
 
 .room > img {
     margin-bottom: 40px;
-    width: 95%;
+    width: 100%;
 }
 
 .room_desc {
@@ -166,18 +165,19 @@
 }
 
 .tags {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 436px;
+    width: 72.2%;
+    display: grid;
+    grid-template-columns: 47.65% 47.65%;
     justify-content: space-between;
-    gap: 20px 0px;
-    margin-bottom: 30px;
+    row-gap: 1.13rem;
+    margin-bottom: 1.63rem;
 }
 
 .tag {
-    font-size: 24px;
-    padding: 9px 20px;
-    background-color: #DCCEB4;
+    padding: 15px 0px;
+    background: #DCCEB4;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .description {
@@ -187,11 +187,12 @@
 .rooms {
     display: grid;
     width: 100%;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    grid-template-columns: 43.63% 43.63%;
 }
 
 .service_img {
     width: 35.7rem;
+    height: 21.43rem;
     display: inline-block;
 }
