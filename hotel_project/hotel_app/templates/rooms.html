@@ -10,7 +10,9 @@
     <div class="rooms_grid">
         {% for room in rooms %}
         <div class="room-card">
-            <img src="../static{{ room.image.url }}" alt="">
+            <a href="/room_page/{{ room.id }}">
+                <img src="../static{{ room.image.url }}" alt="">
+            </a>
             <div class="main-information">
                 <h2 class="main-information-title">{{ room.name_of_class }}</h2>
                 <ul class="tags-list">

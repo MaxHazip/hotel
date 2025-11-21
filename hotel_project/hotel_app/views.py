@@ -46,3 +46,14 @@ def roomsPage(request):
     }
 
     return render(request, 'rooms.html', context)
+
+def roomPage(request, room_id: int):
+
+    
+
+    context = {
+
+    }
+
+
+    return render(request, 'room.html', context)
