@@ -11,7 +11,7 @@
         {% for room in rooms %}
         <div class="room-card">
             <a href="/room_page/{{ room.id }}">
-                <img src="../static{{ room.image.url }}" alt="">
+                <img src="../static{{ room.image.url }}" alt="" class="room-img">
             </a>
             <div class="main-information">
                 <h2 class="main-information-title">{{ room.name_of_class }}</h2>
@@ -19,7 +19,7 @@
                     <li class="tags-list-item first">{{ room.square_meters }}м<sup>2</sup></li>
                     <li class="tags-list-item">{{ room.bed_types.bed_types }}</li>
                     <li class="tags-list-item">Rooms: {{ room.rooms }}</li>
-                    <li class="tags-list-item">{{ room.guests }} Guest</li>
+                    <li class="tags-list-item">Guests: {{ room.guests }}</li>
                 </ul>
                 <p class="description">{{ room.min_desc }}</p>
             </div>

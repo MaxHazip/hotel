@@ -46,6 +46,7 @@
     font-family: "Alike Angular", serif;
     font-size: 14px;
     -webkit-appearance: none;
+    transition: 0.5s;
 }
 
 #guests:focus option:first-child {
@@ -61,6 +62,32 @@
     background-color: white;
     border: 2px solid #DCCEB4;
     padding: 13px 36px;
+    transition: 0.5s;
+}
+
+.find-button:hover {
+    transition: 0.5s;
+    background-color: #DCCEB4;
+}
+
+.more-link {
+    transition: 0.5s;
+}
+
+.more-link::before {
+    content: url("../media/yellow-line.svg");
+    margin-bottom: 15%;
+    transition: 0.5s;
+}
+
+.more-link:hover::before {
+    content: url("../media/golden.svg");
+    transition: 0.5s;
+}
+
+.more-link:hover {
+    color: #BEA40A;
+    transition: 0.5s;
 }
 
 .services-a-events {
@@ -122,9 +149,17 @@
     justify-content: space-between; 
 }
 
-.room > img {
+.room-img {
     margin-bottom: 40px;
     width: 100%;
+    transition: 0.5s;
+}
+
+.room-img:hover {
+
+    transform: scale(1.05);
+    transition: 0.5s;
+
 }
 
 .room_desc {

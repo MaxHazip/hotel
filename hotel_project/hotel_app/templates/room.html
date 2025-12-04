@@ -7,7 +7,22 @@
 {% block main %}
 
 <div class="container">
-    
+    <div class="main-cpecifics">
+        <img src="../static{{ room.image.url }}" alt="" class="main-image">
+        <div class="specifics">
+            <ul class="specifics_list">
+                <li class="specifics_list_items">{{ room.square_meters }}м<sup>2</sup></li>
+                <li class="specifics_list_items">Guests number: {{ room.guests }}</li>
+                <li class="specifics_list_items">Beds number: {{ room.beds }} {{ room.bed_types }}</li>
+                <li class="specifics_list_items">Rooms number: {{ room.rooms }}</li>
+            </ul>
+            <a href="#" class="book">Book</a>
+        </div>
+    </div>
+    <div class="description">
+        <h1>Description</h1>
+        <p class="description">{{ room.desc }}</p>
+    </div>
 </div>
 
 {% endblock %}

@@ -50,16 +50,28 @@ main {
     line-height: 1.5;
 }
 
-.services-card > a {
+.more-link {
     color: #DFC941;
 }
 
-.services-card > a::before {
+.more-link:hover {
+
+    color: #BEA40A;
+
+}
+
+.more-link::before {
     content: "-";
     color: #DFC941;
     font-size: 20px;
     position: relative;
     top: 10%;
+}
+
+.more-link:hover::before {
+
+    color: #BEA40A;
+
 }
 
 .services-card > a:visited {

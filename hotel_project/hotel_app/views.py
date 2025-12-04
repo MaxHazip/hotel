@@ -49,11 +49,11 @@ def roomsPage(request):
 
 def roomPage(request, room_id: int):
 
-    
+    room = get_object_or_404(RoomClasses, id=room_id)
+
 
     context = {
-
+        'room': room,
     }
-
 
     return render(request, 'room.html', context)

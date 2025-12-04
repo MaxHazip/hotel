@@ -4,3 +4,83 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap');
 
+main {
+    padding: 100px 0px;
+    font-family: "Alike Angular", serif;
+}
+
+.main-image {
+    min-height: 400px;
+}
+
+.main-cpecifics {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.specifics {
+    width: 35.78%;
+}
+
+.specifics_list {
+    display: grid;
+    grid-template-columns: 50% 42.68%;
+    justify-content: space-between;
+    row-gap: 1.43rem;
+    font-size: 16px;
+    margin-bottom: 3.57rem;
+}
+
+.specifics_list_items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.specifics_list_items:before {
+    margin-right: 0.71rem;
+}
+
+.specifics_list .specifics_list_items:nth-child(1):before {
+    content: url("../media/square.svg");
+}
+
+.specifics_list .specifics_list_items:nth-child(2):before {
+    content: url("../media/person.svg");
+}
+
+.specifics_list .specifics_list_items:nth-child(3):before {
+    content: url("../media/bed.svg");
+}
+
+.specifics_list .specifics_list_items:nth-child(4):before {
+    content: url("../media/room.svg");
+}
+
+.book {
+    color: white;
+    padding: 10px 75px;
+    font-size: 1.71rem;
+    background-color: #DCCEB4;
+    transition: 0.5s;
+}
+
+.book:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: #3b3221;
+
+}
+
+h1 {
+    font-size: 2.29rem;
+    margin-bottom: 40px;
+}
+
+.description {
+    font-size: 1.71rem;
+}
