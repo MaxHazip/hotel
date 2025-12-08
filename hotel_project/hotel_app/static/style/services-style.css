@@ -54,12 +54,6 @@ main {
     color: #DFC941;
 }
 
-.more-link:hover {
-
-    color: #BEA40A;
-
-}
-
 .more-link::before {
     content: "-";
     color: #DFC941;
@@ -74,6 +68,16 @@ main {
 
 }
 
-.services-card > a:visited {
+.more-link:visited {
     color: #DFC941;
+}
+
+.more-link:visited:hover {
+    color: #BEA40A;
+}
+
+.more-link:hover {
+
+    color: #BEA40A;
+
 }
