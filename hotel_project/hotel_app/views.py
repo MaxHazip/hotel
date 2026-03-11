@@ -57,3 +57,13 @@ def roomPage(request, room_id: int):
     }
 
     return render(request, 'room.html', context)
+
+def about(request):
+
+    context = {
+
+
+
+    }
+
+    return render(request, 'about.html', context)
