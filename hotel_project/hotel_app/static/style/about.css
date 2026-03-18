@@ -20,7 +20,9 @@
 
     width: 100%;
     display: flex;
+    gap: 180px;
     align-items: center;
+    margin-bottom: 150px;
 
 }
 
@@ -32,5 +34,64 @@
     row-gap: 40px;
     grid-template-columns: 168px 168px;
 
+}
 
-} 
+.tag {
+
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: auto 1fr;
+    font-size: 1.43rem;
+
+}
+
+.tag_img {
+
+    width: 75px;
+    aspect-ratio: 1/1;
+
+}
+
+#first_image {
+
+    background-image: url("../media/about/Clock.svg");
+
+}
+
+#second_image {
+
+    background-image: url("../media/about/money.svg");
+
+}
+
+#third_image {
+
+    background-image: url("../media/about/Calendar.svg");
+
+}
+
+#fourth_image {
+
+    background-image: url("../media/about/Service_Bell.svg");
+
+}
+
+.text p {
+
+    margin-bottom: 30px;
+
+}
+
+.text p:last-child {
+
+    margin-bottom: 0px;
+
+}
+
+.bottom_text {
+
+    color: #BFB29B;
+    font-size: 2.29rem;
+    margin-bottom: 50px;
+
+}
