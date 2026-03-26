@@ -8,8 +8,19 @@
 {% block main %}
 <div class="container booking">
     <h1 class="booking">Booking</h1>
-    <form action="submit">
-        <input type="date" id="">
+    <form action="submit" id="main_form">
+        <label for="check_in">Check-in</label>
+        <input type="date" id="check_in">
+        <label for="check_out">Check-out</label>
+        <input type="date" id="check_out">
+        <label for="guestNumber">Guests number</label>
+        <select name="" id="guestNumber">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="4"></option>
+        </select>
+        <label for="promoCode">Promo</label>
+        <input type="text" placeholder="Promo" id="promoCode">
     </form>
 </div>
 {% endblock %}
