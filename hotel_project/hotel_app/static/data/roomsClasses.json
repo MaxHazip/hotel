@@ -1,0 +1,154 @@
+[
+
+    {
+
+        "id": 1,
+        "name": "Lux",
+        "guestNumber": 4,
+        "cost": 500,
+        "image": "../static/media/RoomClasses/Lux.png",
+        "square": 50,
+        "bedType": "Double bed",
+        "bedsCount": 2,
+        "roomsCount": 2,
+        "cardDescription": "Spacious suite with separate living area, sleeping up to 4 guests. Features a customizable orthopedic mattress, bathroom with shower and tub, and smart TV with streaming options. Includes MAYRVEDA tea station, eco-friendly amenities, individual climate control, and optional Sleep Menu. Wi-Fi and safe provided.",
+        "roomDescription": "Indulge in a spacious suite designed for both relaxation and convenience, comfortably accommodating up to four guests. The layout features a separate living area with a plush sofa corner, complemented by a double bed offering a selection of orthopedic mattress firmness for personalized sleep comfort. Your private bathroom includes both a shower and bathtub, while the smart TV supports Google TV and Apple TV connectivity. Enhance your stay with a tea station featuring MAYRVEDA herbal teas, eco-friendly toiletries, and individual climate control. For optimal rest, a dedicated Sleep Menu is available upon request, with additional amenities including Wi-Fi and a safe completing this carefully curated environment."
+
+    },
+    {
+
+        "id": 2,
+        "name": "Half Lux Panoramic View",
+        "guestNumber": 2,
+        "cost": 400,
+        "image": "../static/media/RoomClasses/Half_lux_panoram.png",
+        "square": 32,
+        "bedType": "Double bed",
+        "bedsCount": 2,
+        "roomsCount": 1,
+        "cardDescription": "A cozy room featuring a double bed with customizable mattress firmness, private shower, and smart TV with streaming options. Includes MAYRVEDA herbal teas, eco-friendly toiletries, and individual climate control. Wi-Fi, safe, and sleep menu (on request) provided.",
+        "roomDescription": "This room is designed for personalized comfort, starting with a double bed that lets you select your preferred orthopedic mattress firmness. It features a private bathroom with a shower and a smart TV compatible with Google TV and Apple TV. Enhance your stay with a tea station offering MAYRVEDA herbal teas, eco-friendly toiletries, and individualized climate control. For optimal relaxation, a sleep menu is available upon request, while practical amenities like Wi-Fi and a safe are also provided for your convenience."
+
+    },
+    {
+
+        "id": 3,
+        "name": "Half Lux With Balcony",
+        "guestNumber": 2,
+        "cost": 380,
+        "image": "../static/media/RoomClasses/Half_lux_balc.png",
+        "square": 32,
+        "bedType": "Double bed",
+        "bedsCount": 1,
+        "roomsCount": 1,
+        "cardDescription": "A comfort-focused retreat featuring selectable mattress firmness, smart TV with streaming options, and private shower. Enhanced with MAYRVEDA herbal teas, eco-friendly amenities, and individual climate control. Includes Wi-Fi, safe, and optional sleep menu.",
+        "roomDescription": "This room offers a personalized comfort experience beginning with a double bed featuring selectable orthopedic mattress firmness for optimal sleep quality. Your private bathroom includes a shower, while the smart TV supports both Google TV and Apple TV connectivity. Premium amenities include a tea station with MAYRVEDA herbal teas, eco-friendly toiletries, and individual climate control. For enhanced relaxation, a sleep menu is available upon request. Completing the offering are standard essentials like Wi-Fi and a safe for your valuables."
+
+    },
+    {
+
+        "id": 4,
+        "name": "Half Lux",
+        "guestNumber": 2,
+        "cost": 350,
+        "image": "../static/media/RoomClasses/Half_lux.png",
+        "square": 35,
+        "bedType": "Double bed",
+        "bedsCount": 1,
+        "roomsCount": 1,
+        "cardDescription": "Your personalized retreat featuring selectable mattress firmness, smart TV with streaming options, and private shower. Enhanced with MAYRVEDA herbal teas, eco-friendly amenities, and individual climate control. Includes Wi-Fi, safe, and optional sleep menu for complete comfort.",
+        "roomDescription": "Experience tailored comfort in this thoughtfully designed room featuring a double bed with selectable orthopedic mattress firmness to match your sleep preferences. The space includes a private bathroom with shower and a smart TV compatible with Google TV and Apple TV for seamless entertainment. Refresh with our MAYRVEDA herbal tea collection and eco-friendly toiletries while maintaining your ideal climate with individual temperature control. Enhance your rest with our optional sleep menu, and stay connected with complimentary Wi-Fi. Your valuables remain secure in the provided safe, completing this carefully curated accommodation experience."
+
+    },
+    {
+
+        "id": 5,
+        "name": "Deluxe Panoramic View",
+        "guestNumber": 2,
+        "cost": 300,
+        "image": "../static/media/RoomClasses/Delux_panoramic.png",
+        "square": 28,
+        "bedType": "Double bed",
+        "bedsCount": 1,
+        "roomsCount": 1,
+        "cardDescription": "A personalized retreat featuring selectable mattress firmness, smart TV with streaming options, and private shower. Enhanced with MAYRVEDA herbal teas, eco-friendly amenities, and individual climate control. Includes Wi-Fi, safe, and optional sleep menu for complete comfort.",
+        "roomDescription": "Discover a sanctuary of personalized comfort in this thoughtfully appointed room, featuring a double bed with your choice of orthopedic mattress firmness to ensure your perfect night's sleep. The private bathroom includes a refreshing shower, while the smart TV offers seamless connectivity with Google TV and Apple TV for your entertainment. Unwind with our exclusive MAYRVEDA herbal tea collection and enjoy eco-friendly toiletries throughout your stay. Complete with individual climate control, optional sleep menu, high-speed Wi-Fi, and a secure safe, every detail is designed for your ultimate comfort and well-being."
+
+    },
+    {
+
+        "id": 6,
+        "name": "Deluxe With Balcony",
+        "guestNumber": 2,
+        "cost": 275,
+        "image": "../static/media/RoomClasses/Deluxe_balcony.png",
+        "square": 26,
+        "bedType": "Double bed",
+        "bedsCount": 1,
+        "roomsCount": 1,
+        "cardDescription": "A comfort-focused retreat featuring customizable orthopedic mattress, smart TV with streaming capabilities, and private shower. Enhanced with MAYRVEDA herbal teas, eco-friendly amenities, and personalized climate control. Additional sleep menu available upon request. Includes Wi-Fi and safe.",
+        "roomDescription": "Indulge in a personalized comfort experience with our thoughtfully designed room featuring a double bed where you can select your preferred orthopedic mattress firmness for optimal sleep quality. The space includes a private bathroom with a shower and is equipped with a smart TV compatible with Google TV and Apple TV streaming devices. Unwind with our exclusive MAYRVEDA herbal tea selection and eco-friendly toiletries while enjoying complete climate control at your fingertips. For enhanced relaxation, our special sleep menu is available upon request. Stay connected with high-speed Wi-Fi and keep your valuables secure in the provided safe."
+
+    },
+    {
+
+        "id": 7,
+        "name": "Deluxe",
+        "guestNumber": 2,
+        "cost": 250,
+        "image": "../static/media/RoomClasses/Deluxe.png",
+        "square": 28,
+        "bedType": "Double bed",
+        "bedsCount": 1,
+        "roomsCount": 1,
+        "cardDescription": "A cozy retreat with a customizable orthopedic mattress, en-suite shower, and smart TV. Features MAYRVEDA herbal teas, eco-friendly amenities, and individual climate control for a tailored stay. Sleep menu available upon request. Wi-Fi and safe included.",
+        "roomDescription": "Experience personalized comfort in this well-appointed room, featuring a double bed with your choice of orthopedic mattress firmness for optimal sleep quality. The private bathroom includes a shower, and the room is equipped with a TV compatible with Google TV and Apple TV for seamless entertainment. Enjoy a curated selection of MAYRVEDA herbal teas at the tea station, eco-friendly toiletries, and individual climate control. Enhance your rest with our optional sleep menu, while staying connected with Wi-Fi and securing valuables in the provided safe."
+
+    },
+    {
+
+        "id": 8,
+        "name": "Improved With Balcony",
+        "guestNumber": 2,
+        "cost": 200,
+        "image": "../static/media/RoomClasses/improved_balcony.png",
+        "square": 24,
+        "bedType": "Double bed",
+        "bedsCount": 1,
+        "roomsCount": 1,
+        "cardDescription": "This room offers a tailored sleep experience with a choice of orthopedic mattress firmness, an en-suite shower, and a smart TV for streaming. Guests can enjoy premium touches like MAYRVEDA herbal teas, eco-friendly toiletries, and individual climate control, ensuring a comfortable and sustainable stay.",
+        "roomDescription": "This room is designed as your personal sanctuary, featuring a double bed that allows you to select the perfect firmness for your orthopedic mattress to ensure a restful night's sleep. Your private bathroom is equipped with a shower, and the space includes a TV ready for streaming with Google TV and Apple TV. For your comfort and well-being, you will find an individual climate control system, a tea station with exclusive MAYRVEDA herbal teas, and a range of eco-friendly toiletries. To further enhance your rest, a dedicated sleep menu is available upon request, with all modern essentials like high-speed Wi-Fi and a safe provided for a seamless stay."
+
+    },
+    {
+
+        "id": 9,
+        "name": "Improved",
+        "guestNumber": 2,
+        "cost": 180,
+        "image": "../static/media/RoomClasses/improved.png",
+        "square": 24,
+        "bedType": "Double bed",
+        "bedsCount": 1,
+        "roomsCount": 1,
+        "cardDescription": "Enjoy a perfectly tailored stay in this room, featuring a double bed with your choice of orthopedic mattress firmness. It includes an en-suite shower, a smart TV, individual climate control, and premium amenities like MAYRVEDA herbal teas and organic toiletries for a comfortable and eco-conscious experience.",
+        "roomDescription": "This spacious room is designed as a personal sanctuary for ultimate relaxation, featuring a double bed where you can select the perfect firmness of your orthopedic mattress for a tailored sleep experience. You are equipped with an en-suite bathroom with a shower, a smart TV ready for Google TV and Apple TV, and individual climate control to set your ideal temperature. Premium touches include an eco-friendly tea station with MAYRVEDA herbal teas, organic toiletries, and upon request, a special sleep menu to enhance your rest, complemented by standard amenities like high-speed Wi-Fi and a safe for your valuables."
+
+    },
+    {
+
+        "id": 10,
+        "name": "Standart",
+        "guestNumber": 1,
+        "cost": 100,
+        "image": "../static/media/RoomClasses/Standart.png",
+        "square": 17,
+        "bedType": "Single bed",
+        "bedsCount": 1,
+        "roomsCount": 1,
+        "cardDescription": "Ideal for families or groups, this suite comfortably accommodates up to 4 guests. Features a double bed with a choice of orthopedic mattress firmness, a private bathroom with bathtub and shower, and a smart TV. Enjoy premium amenities like MAYRVEDA herbal teas and eco-friendly toiletries.",
+        "roomDescription": "This spacious suite is ideally configured for up to four guests, featuring a separate living area with a comfortable sofa. The bedroom is equipped with a double bed and an orthopedic mattress, allowing you to select your preferred firmness level for a perfect night's sleep. The private bathroom includes both a shower and a bathtub. Amenities feature a TV with Google TV and Apple TV connectivity, a tea station with MAYRVEDA herbal teas, organic toiletries, individual climate control, a sleep menu (on request), high-speed Wi-Fi, and a safe."
+
+    }
+
+]

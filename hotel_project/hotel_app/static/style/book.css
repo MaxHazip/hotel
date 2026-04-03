@@ -1,20 +1,68 @@
 .booking {
 
     padding: 100px 0px;
-    font-size: 3.43rem;
 
 }
 
-input {
+.bookingTitle {
+
+    font-size: 3.43rem;
+    margin-bottom: 50px;
+
+}
+
+input, select{
 
     padding: 20px;
     border: 2px solid #DCCEB4;
 
 }
 
-.main_form {
+#main_form {
 
     display: grid;
+    width: 84%;
+    column-gap: 70px;
+    row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
     
+
+}
+
+.findButton {
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.inputs {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+label {
+
+    font-size: 1.43rem;
+
+}
+
+select {
+
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+button {
+
+    padding: 10px;
+    font-size: 1.71rem;
+    background-color: #DCCEB4;
 
 }

@@ -7,20 +7,29 @@
 
 {% block main %}
 <div class="container booking">
-    <h1 class="booking">Booking</h1>
-    <form action="submit" id="main_form">
-        <label for="check_in">Check-in</label>
-        <input type="date" id="check_in">
-        <label for="check_out">Check-out</label>
-        <input type="date" id="check_out">
-        <label for="guestNumber">Guests number</label>
-        <select name="" id="guestNumber">
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="4"></option>
-        </select>
-        <label for="promoCode">Promo</label>
-        <input type="text" placeholder="Promo" id="promoCode">
+    <h1 class="bookingTitle">Booking</h1>
+    <form method="get" id="main_form">
+        <div class="checkInDiv inputs">
+            <label for="check_in">Check-in</label>
+            <input type="date" id="check_in" name="checkInDate">
+        </div>
+        <div class="checkOutDiv inputs">
+            <label for="check_out">Check-out</label>
+            <input type="date" id="check_out" name="checkOutDate">
+        </div>
+        <div class="guestNumberDiv">
+            <label for="guestNumber inputs">Guests number</label>
+            <select name="guestNumValue" id="guestNumber">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">3</option>
+            </select>
+        </div>
+        <div class="promoDiv inputs">
+            <label for="promoCode">Promo</label>
+            <input type="text" placeholder="Promo" id="promoCode" name="promoCodeValue">
+        </div>
+        <button class="findButton" type="submit">Find</button>
     </form>
 </div>
 {% endblock %}
