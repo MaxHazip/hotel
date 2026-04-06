@@ -9,11 +9,13 @@ main {
     font-family: "Alike Angular", serif;
 }
 
-.main-image {
+#main-image {
+    max-width: 100%;
+    height: auto;
     min-height: 400px;
 }
 
-.main-cpecifics {
+.main-specifics {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -67,6 +69,7 @@ main {
     font-size: 1.71rem;
     background-color: #DCCEB4;
     transition: 0.5s;
+    display: inline-block;
 }
 
 .book:hover {
@@ -83,4 +86,11 @@ h1 {
 
 .description {
     font-size: 1.71rem;
+}
+
+#roomCost {
+
+    margin-bottom: 20px;
+    font-size: 2rem;
+
 }
