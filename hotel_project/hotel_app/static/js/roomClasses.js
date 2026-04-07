@@ -115,6 +115,9 @@ sortSelect.onchange = () => {
 
 }
 
+
+
 let sortValue = sortSelect.value
 
 sortRoomClasses(sortValue)
+

@@ -16,6 +16,7 @@ const renderRoom = () => {
     let roomsCount = document.getElementById("roomsCount")
     let descritption = document.getElementById("description")
     let roomCost = document.getElementById("roomCost")
+    let bookButton = document.getElementById("book")
 
     image.src = rooms[roomIndex].image
     square.innerHTML = `${rooms[roomIndex].square}м<sup>2</sup>`
@@ -24,6 +25,7 @@ const renderRoom = () => {
     roomsCount.textContent = `Rooms number: ${rooms[roomIndex].roomsCount}`
     descritption.textContent = rooms[roomIndex].roomDescription
     roomCost.textContent = `${rooms[roomIndex].cost}$`
+    bookButton.href = `/booking?id=${rooms[roomIndex].id}`
 
 }
 

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap');
+
+.container {
+
+    font-family: "Alike Angular", serif;
+
+}
+
+.roomCard {
+
+    width: 100%;
+    height: 260px;
+    background-color: #F8F3EA;
+    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    padding-right: 50px;
+
+}
+
+.roomImage {
+
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: white;
+
+}
+
+.roomName {
+
+    font-size: 2.29rem;
+    margin-bottom: 35px;
+
+}
+
+.tagsList {
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+}
+
+.tagsListItem {
+
+    text-align: center;
+    padding: 8px 20px;
+    background-color: #DCCEB4;
+    font-size: 1.71rem;
+
+}
+
+sup {
+
+    position: absolute;
+
+}
+
+.roomDescription {
+
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.mainForm {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 62.04%;
+
+}

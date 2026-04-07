@@ -63,7 +63,7 @@ main {
     content: url("../media/room.svg");
 }
 
-.book {
+#book {
     color: white;
     padding: 10px 75px;
     font-size: 1.71rem;
@@ -72,7 +72,7 @@ main {
     display: inline-block;
 }
 
-.book:hover {
+#book:hover {
     transition: 0.5s;
     color: white;
     background-color: #3b3221;

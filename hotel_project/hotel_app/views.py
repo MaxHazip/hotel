@@ -74,3 +74,13 @@ def book(request):
     }
 
     return render(request, 'book.html', context)
+
+def booking(request):
+
+    context = {
+
+
+
+    }
+
+    return render(request, 'booking.html', context)
