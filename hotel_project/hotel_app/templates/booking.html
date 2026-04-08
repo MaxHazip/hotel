@@ -5,32 +5,38 @@
 {% endblock %}
 
 {% block main %}
-<div class="container">
-    
+<div class="container formContainer">
     <div class="roomCard">
         <div class="roomImage"></div>
         <div class="nameTags">
-            <h2 class="roomName">Standart</h2>
+            <h2 class="roomName"></h2>
             <ul class="tagsList">
-                <li class="tagsListItem">17м<sup>2</sup></li>
-                <li class="tagsListItem">Single bed</li>
-                <li class="tagsListItem">Rooms: 1</li>
-                <li class="tagsListItem">1 Guest</li>
+                <li class="tagsListItem" id="square"></li>
+                <li class="tagsListItem" id="bedType">Single bed</li>
+                <li class="tagsListItem" id="roomsCount">Rooms: 1</li>
+                <li class="tagsListItem" id="guestNumber">1 Guest</li>
             </ul>
         </div>
-        <p class="roomDescription">This designer room features a double bed, sofa, comfortable work area, and panoramic views. A tea station, toiletries, robe, and slippers are provided for your comfort.</p>
+        <p id="roomDescription">This designer room features a double bed, sofa, comfortable work area, and panoramic views. A tea station, toiletries, robe, and slippers are provided for your comfort.</p>
     </div>
-
-    <div class="mainForm">
-        <input type="date" class="bookingFormInput" placeholder="Check-in">
-        <input type="date" class="bookingFormInput">
-        <input type="text" class="bookingFormInput">
-        <input type="text" class="bookingFormInput">
-        <input type="text" class="bookingFormInput">
-        <input type="text" class="bookingFormInput">
-        <input type="text" class="bookingFormInput">
-        <input type="text" class="bookingFormInput">
-    </div>
-
+    <form class="mainForm">
+        <div class="bookingDate">
+            <div class="check_label">Check-in</div>
+            <input type="date" class="check_date">
+        </div>
+        <div class="bookingDate">
+            <div class="check_label">Check-out</div>
+            <input type="date" class="check_date">
+        </div>
+        <input type="text" class="bookingFormInput" placeholder="Guests">
+        <input type="text" class="bookingFormInput" placeholder="Last name">
+        <input type="text" class="bookingFormInput" placeholder="First name">
+        <input type="text" class="bookingFormInput" placeholder="Middle name">
+        <input type="phone" class="bookingFormInput" placeholder="Phone number">
+        <input type="email" class="bookingFormInput" placeholder="Email">
+        <button class="bookingButton">Book</button>
+        <div id="price">200$</div>
+    </form>
 </div>
+<script src="../static/js/booking.js" type="module"></script>
 {% endblock %}

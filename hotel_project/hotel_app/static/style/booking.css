@@ -25,7 +25,9 @@
 
     height: 100%;
     aspect-ratio: 1/1;
-    background-color: white;
+    background-size: cover;
+    background-position: -70px;
+    background-repeat: no-repeat;
 
 }
 
@@ -60,10 +62,10 @@ sup {
 
 }
 
-.roomDescription {
+#roomDescription {
 
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
 
 }
 
@@ -72,5 +74,60 @@ sup {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 62.04%;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.bookingFormInput {
+
+    padding: 22px 10px;
+    background-color: #EEE1CA;
+
+}
+
+.formContainer {
+
+    padding: 50px 0px;
+
+}
+
+.bookingDate {
+
+    background-color: #EEE1CA;
+    padding: 17px 10px;
+
+}
+
+.check_date {
+
+    background-color: #EEE1CA;
+    width: 100%;
+
+}
+
+.check_label {
+
+    font-size: 0.8rem;
+
+}
+
+.bookingFormInput::placeholder {
+
+    color: black;
+
+}
+
+.bookingButton {
+
+    padding: 12px 0px;
+    font-size: 1.71rem;
+    background-color: #DCCEB4;
+
+}
+
+#price {
+
+    font-size: 1.71rem;
 
 }
