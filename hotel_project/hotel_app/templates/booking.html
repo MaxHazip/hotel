@@ -19,24 +19,25 @@
         </div>
         <p id="roomDescription">This designer room features a double bed, sofa, comfortable work area, and panoramic views. A tea station, toiletries, robe, and slippers are provided for your comfort.</p>
     </div>
-    <form class="mainForm">
+    <div class="mainForm">
         <div class="bookingDate">
             <div class="check_label">Check-in</div>
-            <input type="date" class="check_date">
+            <input type="date" class="check_date" id="checkInDate">
         </div>
         <div class="bookingDate">
             <div class="check_label">Check-out</div>
-            <input type="date" class="check_date">
+            <input type="date" class="check_date" id="checkOutDate">
         </div>
-        <input type="text" class="bookingFormInput" placeholder="Guests">
-        <input type="text" class="bookingFormInput" placeholder="Last name">
-        <input type="text" class="bookingFormInput" placeholder="First name">
-        <input type="text" class="bookingFormInput" placeholder="Middle name">
-        <input type="phone" class="bookingFormInput" placeholder="Phone number">
-        <input type="email" class="bookingFormInput" placeholder="Email">
-        <button class="bookingButton">Book</button>
-        <div id="price">200$</div>
-    </form>
+        <input type="number" class="bookingFormInput" id="guestsCount" placeholder="Guests" step="1">
+        <input type="text" class="bookingFormInput" id="lastName" placeholder="Last name">
+        <input type="text" class="bookingFormInput" id="firstName" placeholder="First name">
+        <input type="text" class="bookingFormInput" id="middleName" placeholder="Middle name">
+        <input type="phone" class="bookingFormInput" id="phoneNumber" placeholder="Phone number">
+        <input type="email" class="bookingFormInput" id="email" placeholder="Email">
+        <button id="bookingButton">Book</button>
+        <div id="price"></div>
+    </div>
+    <div id="alert"></div>
 </div>
 <script src="../static/js/booking.js" type="module"></script>
 {% endblock %}

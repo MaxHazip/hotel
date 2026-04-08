@@ -6,6 +6,12 @@
 
 }
 
+.main-nav_list-item {
+
+    font-family: "Konkhmer Sleokchher", system-ui;
+
+}
+
 .roomCard {
 
     width: 100%;
@@ -118,7 +124,7 @@ sup {
 
 }
 
-.bookingButton {
+#bookingButton {
 
     padding: 12px 0px;
     font-size: 1.71rem;
@@ -130,4 +136,17 @@ sup {
 
     font-size: 1.71rem;
 
+}
+
+#alert {
+
+    margin-top: 10px;
+    font-size: 1.4rem;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
